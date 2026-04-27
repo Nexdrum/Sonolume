@@ -6,7 +6,6 @@
 <title>Sonolume</title>
 
 <style>
-
 body{
 margin:0;
 font-family:Arial, Helvetica, sans-serif;
@@ -29,6 +28,8 @@ display:flex;
 justify-content:space-between;
 align-items:center;
 padding:10px 0;
+gap:20px;
+flex-wrap:wrap;
 }
 
 .logo{
@@ -37,8 +38,13 @@ font-weight:bold;
 letter-spacing:2px;
 }
 
+nav{
+display:flex;
+gap:18px;
+flex-wrap:wrap;
+}
+
 nav a{
-margin-left:20px;
 color:#c9d0ff;
 text-decoration:none;
 }
@@ -57,7 +63,7 @@ color:transparent;
 }
 
 .subtitle{
-max-width:600px;
+max-width:650px;
 margin:auto;
 margin-top:20px;
 color:#b6bedb;
@@ -77,6 +83,10 @@ margin:5px;
 background:#ffffff0d;
 text-decoration:none;
 color:white;
+}
+
+.button:hover{
+background:#ffffff18;
 }
 
 .projects{
@@ -99,6 +109,7 @@ margin-top:0;
 
 .card p{
 color:#b6bedb;
+line-height:1.55;
 }
 
 .card a{
@@ -123,6 +134,17 @@ text-align:center;
 color:#7f86a8;
 }
 
+@media (max-width:700px){
+.hero{
+padding:55px 10px;
+}
+.hero h1{
+font-size:3rem;
+}
+header{
+align-items:flex-start;
+}
+}
 </style>
 </head>
 
@@ -135,7 +157,10 @@ color:#7f86a8;
 <nav>
 <a href="#projects">Projects</a>
 <a href="#about">About</a>
-<a href="https://github.com">GitHub</a>
+<a href="https://nexdrum.github.io/Nebular/" target="_blank" rel="noreferrer">Nebular</a>
+<a href="https://nexdrum.github.io/Spectrello/" target="_blank" rel="noreferrer">Spectrello</a>
+<a href="https://nexdrum.github.io/Sonolume/visualizer.html" target="_blank" rel="noreferrer">Visualizer</a>
+<a href="https://github.com/nexdrum" target="_blank" rel="noreferrer">GitHub</a>
 </nav>
 </header>
 
@@ -146,12 +171,12 @@ color:#7f86a8;
 <p class="subtitle">
 Experimental musical interfaces where sound and light meet.
 A growing collection of visual instruments for exploring harmony,
-string mapping, and musical structure.
+string mapping, spectral motion, and musical structure.
 </p>
 
 <div class="buttons">
 <a class="button" href="#projects">Explore Projects</a>
-<a class="button" href="https://github.com">View GitHub</a>
+<a class="button" href="https://nexdrum.github.io/Sonolume/visualizer.html" target="_blank" rel="noreferrer">Open Visualizer</a>
 </div>
 
 </section>
@@ -166,7 +191,7 @@ string mapping, and musical structure.
 An interactive MIDI grid for exploring harmonic relationships,
 note layouts, and visual music theory.
 </p>
-<a href="https://nexdrum.github.io/Nebular/">Open Nebular →</a>
+<a href="https://nexdrum.github.io/Nebular/" target="_blank" rel="noreferrer">Open Nebular →</a>
 </div>
 
 <div class="card">
@@ -175,7 +200,16 @@ note layouts, and visual music theory.
 A spectral fretboard interface for string instruments,
 phase navigation, and harmonic exploration.
 </p>
-<a href="https://nexdrum.github.io/Spectrello/">Open Spectrello →</a>
+<a href="https://nexdrum.github.io/Spectrello/" target="_blank" rel="noreferrer">Open Spectrello →</a>
+</div>
+
+<div class="card">
+<h3>Visualizer</h3>
+<p>
+A visual audio analysis tool for seeing sound as spectral motion,
+frequency energy, and harmonic color.
+</p>
+<a href="https://nexdrum.github.io/Sonolume/visualizer.html" target="_blank" rel="noreferrer">Open Visualizer →</a>
 </div>
 
 <div class="card">
@@ -202,8 +236,8 @@ that connect sound and light through visual structure.
 </p>
 
 <p>
-Projects like Nebular and Spectrello explore harmonic relationships,
-instrument geometry, and new ways to interact with music.
+Projects like Nebular, Spectrello, and the Visualizer explore harmonic relationships,
+instrument geometry, spectral analysis, and new ways to interact with music.
 Future instruments and visual tools will continue expanding the system.
 </p>
 
